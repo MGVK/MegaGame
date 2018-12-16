@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.mgvk.megacliker.SettingsActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="50dp"
+        android:text="Уровни сложности"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:onClick="onClick"
+            android:id="@+id/level1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="level 1"/>
+
+        <RadioButton
+            android:onClick="onClick"
+            android:id="@+id/level2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="level 2"/>
+
+        <RadioButton
+            android:onClick="onClick"
+            android:id="@+id/level3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="level 3"/>
+
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>
